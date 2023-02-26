@@ -29,10 +29,10 @@ function getThingSpeakLightState() {
       var myObj = JSON.parse(this.responseText);
       if (myObj.field2 == 1) {
         document.getElementById("LIGHTState").innerHTML = "ON";
-        document.getElementById("LightImage").src = "./images/ledon.png";
+        document.getElementById("LightImage").src = "ledon.png";
       } else {
         document.getElementById("LIGHTState").innerHTML = "OFF";
-        document.getElementById("LightImage").src = "./images/ledoff.png";
+        document.getElementById("LightImage").src = "ledoff.png";
       }
     }
   };
